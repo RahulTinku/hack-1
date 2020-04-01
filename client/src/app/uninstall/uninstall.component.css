@@ -1,0 +1,12 @@
+.wraper {
+	position: relative;
+}
+
+.keepRight {
+	position: absolute;
+	right: 0;
+	top: 20px;
+}
+.error {
+	color: red;
+}

@@ -1,0 +1,25 @@
+.modal {
+	display: none;
+	position : fixed;
+	z-index : 5;
+	left : 0;
+	right : 0;
+	/*border: 1px solid #888;*/
+	width : 200px;
+	height : 325px;
+	overflow : auto;
+	background: transparent;
+	top: 0;
+}
+.popup {
+	display: block;
+	overflow: hidden;
+}
+.modal-content {
+	background: transparent;
+	padding: 0px;
+	/*border: 1px solid #888;*/
+	width : 180px;
+	height : 275px;
+	top: 0%;
+}

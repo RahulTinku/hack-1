@@ -1,0 +1,33 @@
+<div>
+	<header></header>
+	<div id="usercontext-bar">
+		<span style="margin-left:25px;">
+			<a routerLink ='/install' routerLinkActive #rla1="routerLinkActive">PowerPackers</a>
+		</span>&nbsp;>&nbsp;<span>{{breadcrum}}</span>
+	</div>
+
+    <main>
+	    <!-- start of content area  -->  
+	    <div>
+		    <div style="margin-top: 1%;">
+		        <ul class="navMenu clearfix">
+		            <li><a routerLink ='/install' routerLinkActive #rla1="routerLinkActive">Install</a></li>
+		            <li><a routerLink = '/uninstall' routerLinkActive #rla2="routerLinkActive">Uninstall</a></li>
+		            <li><a routerLink = '/config' routerLinkActive #rla3="routerLinkActive">Configuration</a></li>
+		            <li><a routerLink = '/log/false' routerLinkActive #rla4="routerLinkActive">Log</a></li>
+		            <li><a routerLink = '/about' routerLinkActive #rla5="routerLinkActive">About</a></li>
+		            <li><a routerLink = '/tsgHelp' routerLinkActive #rla6="routerLinkActive">Help</a></li>
+		        </ul>
+		        <div class="mainContainer">
+		        	<router-outlet (activate)="verifyUser()"></router-outlet>
+		        	<button type="button" (click)="sendMsg()">send mesg</button>
+		        </div>
+		        <div class="footer-main">
+	        		<p>Copyright © 2005-2019 PowerSchool Group LLC and/or its affiliate(s). All rights reserved.</p>
+					<p>All trademarks are either owned or licensed by PowerSchool Group LLC and/or its affiliates.</p>
+        		</div>
+		    </div>
+		</div>
+		<!-- end of content area  -->  
+    </main>
+</div>

@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+/**
+ * Global Application Styles
+ */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+table.mat-calendar-table {
+  margin: 0 0 0 0 !important;
+}
+th.mat-calendar-table-header-divider {
+	background : #ffffff;
+}
+.mat-calendar-table-header th{
+	background : #ffffff;	
+}
+body{
+	overflow-x: hidden;
+}
+/*@import "constants";*/
+
+/*thead tr th {
+  text-align: left;
+}
+
+tbody tr td:first-child {
+  width: 24em;
+  min-width: 24em;
+  max-width: 24em;
+}
+*/
